@@ -41,10 +41,16 @@ works on inbuilt JSON file.
 MIT License<br> Please read the [License](https://github.com/gokulnair2001/DineIN/blob/main/LICENSE) file for details.
 
 # How to Contribute 🖋 
-
+Contributions are always welcome.
 * Run the app - Steps are mentioned above.
 * If you face issues in any step open a new issue.
 * To fix issues: Fork this repository, make your changes and make a Pull Request. 
+
+Please follow the following convention if you’re contributing: 🆕
+
+* NameOfFile: Changes Made
+* One commit per feature
+* For issue fixes: #IssueNumber NameOfFile: ChangesMade
 
 
 # Imortant Message 
