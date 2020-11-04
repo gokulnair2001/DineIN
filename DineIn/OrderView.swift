@@ -8,13 +8,39 @@
 import SwiftUI
 
 struct OrderView: View {
+    @EnvironmentObject var order: Order
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationView{
+            List{
+                Section{
+                    ForEach(order.items){ item in
+                        HStack{
+                            Text(item.name)
+                            Spacer()
+                            Text("$\(item.price)")
+                        }
+                    }.onDelete(perform: deleteItems)
+                }
+                
+                Section{
+                    NavigationLink(destination: CheckoutView()){
+                        Text("Place Order")
+                    }.disabled(order.items.isEmpty)
+                }
+            }.navigationTitle("Order").listStyle(GroupedListStyle())
+            .navigationBarItems(trailing: EditButton().foregroundColor(.green))
+        }
+    }
+    
+    func deleteItems(at offsets: IndexSet){
+        order.items.remove(atOffsets: offsets)
     }
 }
 
 struct OrderView_Previews: PreviewProvider {
+    static let order = Order()
+    
     static var previews: some View {
-        OrderView()
+        OrderView().environmentObject(order)
     }
 }

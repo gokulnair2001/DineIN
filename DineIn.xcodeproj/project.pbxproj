@@ -15,6 +15,16 @@
 		55579C3D254C7D1B0034B9E6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55579C3B254C7D1B0034B9E6 /* LaunchScreen.storyboard */; };
 		55579C48254C7D1B0034B9E6 /* DineInTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55579C47254C7D1B0034B9E6 /* DineInTests.swift */; };
 		55579C53254C7D1B0034B9E6 /* DineInUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55579C52254C7D1B0034B9E6 /* DineInUITests.swift */; };
+		55579C64254C7DE20034B9E6 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55579C63254C7DE20034B9E6 /* Helper.swift */; };
+		55579C6A254C7E080034B9E6 /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55579C68254C7E080034B9E6 /* Menu.swift */; };
+		55579C6B254C7E080034B9E6 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55579C69254C7E080034B9E6 /* Order.swift */; };
+		55579C70254C7E6F0034B9E6 /* menu.json in Resources */ = {isa = PBXBuildFile; fileRef = 55579C6F254C7E6F0034B9E6 /* menu.json */; };
+		55579C75254D24F80034B9E6 /* ItemRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55579C74254D24F80034B9E6 /* ItemRow.swift */; };
+		55579C7A254E7F380034B9E6 /* ItemDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55579C79254E7F380034B9E6 /* ItemDetail.swift */; };
+		55579C7F254FDE850034B9E6 /* OrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55579C7E254FDE850034B9E6 /* OrderView.swift */; };
+		55579C84254FE4C80034B9E6 /* AppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55579C83254FE4C80034B9E6 /* AppView.swift */; };
+		55579C89254FF6BE0034B9E6 /* CheckoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55579C88254FF6BE0034B9E6 /* CheckoutView.swift */; };
+		55579C8E25502FE20034B9E6 /* FavouriteFood.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55579C8D25502FE20034B9E6 /* FavouriteFood.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +59,16 @@
 		55579C4E254C7D1B0034B9E6 /* DineInUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DineInUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		55579C52254C7D1B0034B9E6 /* DineInUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DineInUITests.swift; sourceTree = "<group>"; };
 		55579C54254C7D1B0034B9E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		55579C63254C7DE20034B9E6 /* Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		55579C68254C7E080034B9E6 /* Menu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
+		55579C69254C7E080034B9E6 /* Order.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
+		55579C6F254C7E6F0034B9E6 /* menu.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = menu.json; sourceTree = "<group>"; };
+		55579C74254D24F80034B9E6 /* ItemRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemRow.swift; sourceTree = "<group>"; };
+		55579C79254E7F380034B9E6 /* ItemDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetail.swift; sourceTree = "<group>"; };
+		55579C7E254FDE850034B9E6 /* OrderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderView.swift; sourceTree = "<group>"; };
+		55579C83254FE4C80034B9E6 /* AppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppView.swift; sourceTree = "<group>"; };
+		55579C88254FF6BE0034B9E6 /* CheckoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutView.swift; sourceTree = "<group>"; };
+		55579C8D25502FE20034B9E6 /* FavouriteFood.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteFood.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,8 +122,18 @@
 				55579C30254C7D1A0034B9E6 /* AppDelegate.swift */,
 				55579C32254C7D1A0034B9E6 /* SceneDelegate.swift */,
 				55579C34254C7D1A0034B9E6 /* ContentView.swift */,
+				55579C74254D24F80034B9E6 /* ItemRow.swift */,
+				55579C79254E7F380034B9E6 /* ItemDetail.swift */,
+				55579C7E254FDE850034B9E6 /* OrderView.swift */,
+				55579C83254FE4C80034B9E6 /* AppView.swift */,
+				55579C8D25502FE20034B9E6 /* FavouriteFood.swift */,
+				55579C88254FF6BE0034B9E6 /* CheckoutView.swift */,
+				55579C63254C7DE20034B9E6 /* Helper.swift */,
 				55579C36254C7D1B0034B9E6 /* Assets.xcassets */,
 				55579C3B254C7D1B0034B9E6 /* LaunchScreen.storyboard */,
+				55579C68254C7E080034B9E6 /* Menu.swift */,
+				55579C69254C7E080034B9E6 /* Order.swift */,
+				55579C6F254C7E6F0034B9E6 /* menu.json */,
 				55579C3E254C7D1B0034B9E6 /* Info.plist */,
 				55579C38254C7D1B0034B9E6 /* Preview Content */,
 			);
@@ -241,6 +271,7 @@
 			files = (
 				55579C3D254C7D1B0034B9E6 /* LaunchScreen.storyboard in Resources */,
 				55579C3A254C7D1B0034B9E6 /* Preview Assets.xcassets in Resources */,
+				55579C70254C7E6F0034B9E6 /* menu.json in Resources */,
 				55579C37254C7D1B0034B9E6 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -266,9 +297,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55579C6B254C7E080034B9E6 /* Order.swift in Sources */,
+				55579C89254FF6BE0034B9E6 /* CheckoutView.swift in Sources */,
 				55579C31254C7D1A0034B9E6 /* AppDelegate.swift in Sources */,
+				55579C8E25502FE20034B9E6 /* FavouriteFood.swift in Sources */,
 				55579C33254C7D1A0034B9E6 /* SceneDelegate.swift in Sources */,
+				55579C75254D24F80034B9E6 /* ItemRow.swift in Sources */,
 				55579C35254C7D1A0034B9E6 /* ContentView.swift in Sources */,
+				55579C7A254E7F380034B9E6 /* ItemDetail.swift in Sources */,
+				55579C7F254FDE850034B9E6 /* OrderView.swift in Sources */,
+				55579C64254C7DE20034B9E6 /* Helper.swift in Sources */,
+				55579C84254FE4C80034B9E6 /* AppView.swift in Sources */,
+				55579C6A254C7E080034B9E6 /* Menu.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

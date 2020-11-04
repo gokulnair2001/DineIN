@@ -8,13 +8,24 @@
 import SwiftUI
 
 struct FavouriteFood: View {
+    @EnvironmentObject var order: Order
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationView{
+            List{
+                Text("Hello")
+                Text("Hello")
+                Text("Hello")
+                Text("Hello")
+            }.navigationTitle("Favourites").listStyle(GroupedListStyle())
+        }
     }
 }
 
 struct FavouriteFood_Previews: PreviewProvider {
+    static let order = Order()
+    
     static var previews: some View {
-        FavouriteFood()
+        FavouriteFood().environmentObject(order)
     }
 }

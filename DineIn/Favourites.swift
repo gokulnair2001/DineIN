@@ -7,14 +7,16 @@
 
 import SwiftUI
 
-struct Favourites: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
-}
+class Favourites: ObservableObject {
+    @Published var items = [MenuItem]()
 
-struct Favourites_Previews: PreviewProvider {
-    static var previews: some View {
-        Favourites()
+    func add(item: MenuItem) {
+        items.append(item)
+    }
+
+    func remove(item: MenuItem) {
+        if let index = items.firstIndex(of: item) {
+            items.remove(at: index)
+        }
     }
 }
